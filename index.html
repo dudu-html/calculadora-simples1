@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 1</title>
+</head>
+<body>
+
+    <script>
+
+        // Intro
+
+        alert('Bem vindo(a), esta é uma calculadora simples feita com Javascript');
+
+        alert('A seguir, selecione a operação matemática que você deseja realizar.');
+
+        function iniciar() {
+            
+            let operacao = prompt('Redija o número da operação matemática desejada. \n 1 - SOMA \n 2 - SUBTRAÇÃO \n 3 - MULTIPLICAÇÃO \n 4 - DIVISÃO');
+
+            // Estrutura condicional
+
+            if (operacao == '1') {
+                
+                alert('SOMA');
+                let num1 = Number(prompt('Primeiro número:'));
+                let num2 = Number(prompt('Segundo número:'));
+                let result = num1+num2;
+                alert('Calculando...');
+                alert('RESULTADO: ' + result);
+
+            }   else if (operacao == '2') {
+
+                    alert('SUBTRAÇÃO');
+                    let num1 = Number(prompt('Primeiro número:'));
+                    let num2 = Number(prompt('Segundo número:'));
+                    let result = num1-num2;
+                    alert('Calculando...');
+                    alert('RESULTADO: ' + result);
+
+                }   else if (operacao == '3') {
+
+                        alert('MULTIPLICAÇÃO');
+                        let num1 = Number(prompt('Primeiro número:'));
+                        let num2 = Number(prompt('Segundo número:'));
+                        let result = num1*num2;
+                        alert('Calculando...');
+                        alert('RESULTADO: ' + result);
+
+                    }   else if (operacao == '4') {
+
+                            alert('DIVISÃO');
+                            let num1 = Number(prompt('Primeiro número:'));
+                            let num2 = Number(prompt('Segundo número:'));
+                            let result = num1/num2;
+                            alert('Calculando...');
+                            alert('RESULTADO: ' + result);
+
+                        }   else {
+
+                                alert('Você deve digitar entre 1-4 para realizar a operação desejada!');
+                                iniciar();
+
+                            }
+            
+        }
+
+        iniciar();
+
+    </script>
+
+    <input type="button" value="Reiniciar&nbsp;↺" onClick="window.location.reload()">
+    
+</body>
+</html>
